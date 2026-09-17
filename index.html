@@ -1,101 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <title>awaAI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <h1>awaAI</h1>
-        <ul>
-            <li><a href="#image">Image Generator</a></li>
-            <li><a href="#story">Story Maker</a></li>
-            <li><a href="#meme">Meme Maker</a></li>
-            <li><a href="#video">Video Generator</a></li>
-            <li><a href="#character">Character Creator</a></li>
-            <li><a href="#quiz">Quiz Maker</a></li>
-        </ul>
-    </nav>
+<nav>
+    <h1>awaAI</h1>
+</nav>
 
-    <section class="home">
-        <h2>All your AI tools in one place</h2>
+<div class="container">
+    <h2>All your AI tools in one place</h2>
 
-        <div class="grid">
-            <a class="card" href="#image">Image Generator</a>
-            <a class="card" href="#story">Story Maker</a>
-            <a class="card" href="#meme">Meme Maker</a>
-            <a class="card" href="#video">Video Generator</a>
-            <a class="card" href="#character">Character Creator</a>
-            <a class="card" href="#quiz">Quiz Maker</a>
-        </div>
-    </section>
+    <div class="grid">
+        <a class="card" href="image.html">Image Generator</a>
+        <a class="card" href="story.html">Story Maker</a>
+        <a class="card" href="meme.html">Meme Maker</a>
+        <a class="card" href="video.html">Video Generator</a>
+        <a class="card" href="character.html">Character Creator</a>
+        <a class="card" href="quiz.html">Quiz Maker</a>
+    </div>
+</div>
 
-    <!-- IMAGE GENERATOR -->
-    <section id="image" class="tool">
-        <h2>AI Image Generator</h2>
-        <textarea id="imagePrompt" placeholder="Describe your image..."></textarea>
-        <input id="imageStyle" placeholder="Choose 1-3 styles (anime, realistic, pixel, etc)">
-        <button onclick="generateImage()">Generate Image</button>
-        <img id="imageOutput">
-        <button onclick="downloadImage()">Download</button>
-    </section>
-
-    <!-- STORY MAKER -->
-    <section id="story" class="tool">
-        <h2>AI Story Maker</h2>
-        <textarea id="storyIdea" placeholder="Type your story idea..."></textarea>
-        <input id="storyLength" placeholder="Length (1 paragraph - 3 pages)">
-        <input id="storyMode" placeholder="Mode (chaos, fantasy, sci-fi, etc)">
-        <textarea id="storyCharacters" placeholder="Characters + roles"></textarea>
-        <button onclick="generateStory()">Generate Story</button>
-        <textarea id="storyOutput"></textarea>
-        <button onclick="copyStory()">Copy Story</button>
-    </section>
-
-    <!-- MEME MAKER -->
-    <section id="meme" class="tool">
-        <h2>AI Meme Maker</h2>
-        <textarea id="memeIdea" placeholder="Type your meme idea..."></textarea>
-        <button onclick="generateMeme()">Generate Meme</button>
-        <img id="memeOutput">
-        <button onclick="downloadMeme()">Download</button>
-    </section>
-
-    <!-- VIDEO GENERATOR -->
-    <section id="video" class="tool">
-        <h2>AI Video Generator</h2>
-        <textarea id="videoIdea" placeholder="Type your video idea..."></textarea>
-        <input id="videoStyle" placeholder="Style (cartoon, meme, etc)">
-        <input id="videoLength" placeholder="Length (3-10 seconds)">
-        <button onclick="generateVideo()">Generate Video</button>
-        <video id="videoOutput" controls></video>
-        <button onclick="downloadVideo()">Download</button>
-    </section>
-
-    <!-- CHARACTER CREATOR -->
-    <section id="character" class="tool">
-        <h2>AI Character Creator</h2>
-        <input id="charName" placeholder="Name (optional)">
-        <input id="charType" placeholder="Type (hero, villain, creature)">
-        <input id="charVibe" placeholder="Vibe (funny, serious, chaotic)">
-        <button onclick="generateCharacter()">Generate Character</button>
-        <textarea id="charOutput"></textarea>
-        <button onclick="copyCharacter()">Copy Character</button>
-    </section>
-
-    <!-- QUIZ MAKER -->
-    <section id="quiz" class="tool">
-        <h2>AI Quiz Maker</h2>
-        <input id="quizTopic" placeholder="Topic">
-        <input id="quizDifficulty" placeholder="Difficulty">
-        <input id="quizAmount" placeholder="Number of questions">
-        <button onclick="generateQuiz()">Generate Quiz</button>
-        <textarea id="quizOutput"></textarea>
-        <button onclick="copyQuiz()">Copy Quiz</button>
-    </section>
-
-    <script src="script.js"></script>
 </body>
 </html>
