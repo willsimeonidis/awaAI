@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>awaAI - Character Creator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav><h1>awaAI</h1></nav>
+
+<div class="container">
+    <h2>AI Character Creator</h2>
+
+    <input id="charName" placeholder="Name (optional)">
+    <input id="charType" placeholder="Type (hero, villain, creature)">
+    <input id="charVibe" placeholder="Vibe (funny, serious, chaotic)">
+
+    <button onclick="generateCharacter()">Generate Character</button>
+
+    <textarea id="charOutput" style="height:300px;"></textarea>
+
+    <button onclick="copyCharacter()">Copy Character</button>
+
+    <a class="back" href="index.html">← Back</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
