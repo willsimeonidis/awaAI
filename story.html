@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>awaAI - Story Maker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav><h1>awaAI</h1></nav>
+
+<div class="container">
+    <h2>AI Story Maker</h2>
+
+    <textarea id="storyIdea" placeholder="Story idea..."></textarea>
+    <input id="storyLength" placeholder="Length (1 paragraph - 3 pages)">
+    <input id="storyMode" placeholder="Mode (chaos, fantasy, etc)">
+    <textarea id="storyCharacters" placeholder="Characters + roles"></textarea>
+
+    <button onclick="generateStory()">Generate Story</button>
+
+    <textarea id="storyOutput" style="height:300px;"></textarea>
+
+    <button onclick="copyStory()">Copy Story</button>
+
+    <a class="back" href="index.html">← Back</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
