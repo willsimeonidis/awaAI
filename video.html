@@ -1,1 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>awaAI - Video Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav><h1>awaAI</h1></nav>
+
+<div class="container">
+    <h2>AI Video Generator</h2>
+
+    <textarea id="videoIdea" placeholder="Video idea..."></textarea>
+    <input id="videoStyle" placeholder="Style (cartoon, meme, etc)">
+    <input id="videoLength" placeholder="Length (3-10 seconds)">
+
+    <button onclick="generateVideo()">Generate Video</button>
+
+    <video id="videoOutput" controls></video>
+
+    <button onclick="downloadVideo()">Download</button>
+
+    <a class="back" href="index.html">← Back</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
