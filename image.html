@@ -1,1 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>awaAI - Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<nav>
+    <h1>awaAI</h1>
+</nav>
+
+<div class="container">
+    <h2>AI Image Generator</h2>
+
+    <textarea id="imagePrompt" placeholder="Describe your image..."></textarea>
+    <input id="imageStyle" placeholder="Choose 1-3 styles">
+
+    <button onclick="generateImage()">Generate Image</button>
+
+    <img id="imageOutput" style="margin-top:30px; border-radius:12px; width:100%;">
+
+    <button onclick="downloadImage()">Download</button>
+
+    <a class="back" href="index.html">← Back</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
