@@ -1,4 +1,4 @@
-const OPENAI_KEY = "YOUR_OPENAI_KEY_HERE";
+const OPENAI_KEY = "";
 
 async function generateImage() {
     const prompt = document.getElementById("imagePrompt").value;
